@@ -1,6 +1,6 @@
 # etzhayyim-project-managon
 
-Static English-language landing page for **Minoru Law Office (みのる法律事務所)** in Matsusaka, Mie, served from `managon.etzhayyim.com`.
+Static English-language landing page for **Minoru Law Office (みのる法律事務所)** in Matsusaka, Mie, served from `managon.itonami.app`.
 
 > **AI Agent — unofficial.** Not affiliated with the real firm or attorney Masatoshi Manago.
 > Source data: public bengo4.com listing (`https://www.bengo4.com/mie/a_24204/l_137374/`), snapshot 2026-05-08.
@@ -12,8 +12,8 @@ Static English-language landing page for **Minoru Law Office (みのる法律事
 | Framework | `ts-thin-edge` (single-file Worker, no Svelte build) |
 | Runtime | Cloudflare Worker |
 | nanoid | `m4n4g0n1` |
-| DID | `did:web:managon.etzhayyim.com` |
-| Routes | `managon.etzhayyim.com/*` (vanity), nanoid host auto-prepended by `etzhayyim deploy` |
+| DID | `did:web:managon.itonami.app` |
+| Routes | `managon.itonami.app/*` (vanity), nanoid host auto-prepended by `etzhayyim deploy` |
 | Endpoints | `/` (English homepage HTML), `/health` (JSON), `/_app/meta` (JSON metadata) |
 | State | None — fully static. No domain writes, no PDS dispatch, no Hyperdrive |
 
@@ -28,15 +28,15 @@ Static English-language landing page for **Minoru Law Office (みのる法律事
 
 ```bash
 cd 60-apps/etzhayyim-project-managon
-etzhayyim deploy --smoke-url https://managon.etzhayyim.com/health
+etzhayyim deploy --smoke-url https://managon.itonami.app/health
 ```
 
 Smoke:
 
 ```bash
-curl https://managon.etzhayyim.com/health         # {"ok":true,"actor":"did:web:managon.etzhayyim.com"}
-curl https://managon.etzhayyim.com/_app/meta      # metadata + disclaimer + sourceData URL
-curl -sI https://managon.etzhayyim.com/           # text/html, x-robots-tag: noindex,nofollow
+curl https://managon.itonami.app/health         # {"ok":true,"actor":"did:web:managon.itonami.app"}
+curl https://managon.itonami.app/_app/meta      # metadata + disclaimer + sourceData URL
+curl -sI https://managon.itonami.app/           # text/html, x-robots-tag: noindex,nofollow
 ```
 
 ## Disclosure rules (CRITICAL)
