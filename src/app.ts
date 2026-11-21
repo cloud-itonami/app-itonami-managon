@@ -11,7 +11,7 @@ interface ExportedHandler<E> {
   fetch(req: Request, env: E): Promise<Response>;
 }
 
-const ACTOR_DID = "did:web:managon.etzhayyim.com";
+const ACTOR_DID = "did:web:managon.itonami.app";
 
 // AGENTS.md の `Disclosure rules (CRITICAL)`。このページは実在の法律事務所と
 // 実在の弁護士についての、非公式な AI 生成ページである。断り書きは装飾ではなく
@@ -258,7 +258,7 @@ function renderHome(): string {
     For advice on a specific matter, please contact the firm directly.
   </p>
   <p>
-    &copy; Minoru Law Office (みのる法律事務所). English-language site at <code>managon.etzhayyim.com</code>.
+    &copy; Minoru Law Office (みのる法律事務所). English-language site at <code>managon.itonami.app</code>.
   </p>
 </footer>
 

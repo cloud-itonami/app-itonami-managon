@@ -47,7 +47,7 @@
      指す）は、2026-09 移行後は矛盾ではなく**別々の実在する面を指す 2 つの
      宣言**になった —— ただしどちらも「実際に喋る相手」を無矛盾には
      決めない点は変わらない。
-  3. `routes` に DID のホスト `managon.etzhayyim.com` が無い（nanoid ホストだけ）。
+  3. `routes` に DID のホスト `managon.itonami.app` が無い（nanoid ホストだけ）。
      AGENTS.md は vanity route が在ると書く。
 
   1〜3 を assert しないのは、**どちらの向きが意図なのかをこの repo から決められ
@@ -174,8 +174,8 @@
         "外れると kotodama fleet の逆引きから消える"))
   (testing "DID のホストは nanoid ホストと同じ zone に属する"
     (let [actor-host (str/replace (:actor-did @worker) #"^did:web:" "")]
-      (is (str/ends-with? actor-host ".etzhayyim.com")
-          "actor DID が etzhayyim.com の外を指している — 配備 zone と identity が別ドメインになる"))))
+      (is (str/ends-with? actor-host ".itonami.app")
+          "actor DID が itonami.app の外を指している — 配備 zone と identity が別ドメインになる"))))
 
 (deftest declared-version-agrees-across-package-wrangler-and-kotodama
   (let [v (:version @pkg)]

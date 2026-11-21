@@ -50,8 +50,8 @@
   ],
   "routes": [
     {
-      "pattern": "m4n4g0n1.etzhayyim.com/*",
-      "zone_name": "etzhayyim.com"
+      "pattern": "m4n4g0n1.itonami.app/*",
+      "zone_name": "itonami.app"
     }
   ]
 }
